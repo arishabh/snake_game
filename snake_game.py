@@ -97,8 +97,8 @@ while not quit:
                 quit = True
             if event.key == pygame.K_SPACE:
                 if fuel > 0:
-                    fuel -= 1
                     clock_spd *= 1.2-fuel
+                    fuel -= 1
     
     x_coord = (x_coord+x_vel)%size[0]
     y_coord = (y_coord+y_vel)%size[1]
